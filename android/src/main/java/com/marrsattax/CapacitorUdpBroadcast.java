@@ -1,11 +1,15 @@
-package com.marrsattax;
+package com.marrsattax.capacitorudpbroadcast;
 
-import android.util.Log;
+import com.getcapacitor.JSObject;
 
-public class CapacitorUdpBroadcast {
+public interface CapacitorUdpBroadcast {
+    void createSocket(JSObject options, Callback callback);    
+    void listen(Callback callback);
+    void sendMessage(String message, String address, int port, Callback callback);
+    void close(Callback callback);
 
-    public String echo(String value) {
-        Log.i("Echo", value);
-        return value;
+    interface Callback {
+        void onSuccess();
+        void onError(String errorMessage);
     }
 }

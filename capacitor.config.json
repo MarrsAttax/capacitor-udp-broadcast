@@ -1,0 +1,24 @@
+{
+  "name": "capacitor-udp-broadcast",
+  "version": "0.0.1",
+  "description": "The UDP Broadcast plugin enables sending and receiving UDP packets to/from devices on the network, facilitating device discovery and real-time communication.",
+  "author": "MarrsAttax",
+  "homepage": "",
+  "license": "MIT",
+  "keywords": [
+    "capacitor",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarrsAttax/capacitor-udp-broadcast"
+  },
+  "engines": {
+    "capacitor": "^5.0.0"
+  },
+  "plugins": {
+    "capacitor-udp-broadcast": {
+      "main": "capacitor-udp-broadcast.js"
+    }
+  }
+}
